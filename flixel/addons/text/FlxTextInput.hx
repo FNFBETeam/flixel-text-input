@@ -92,7 +92,7 @@ class FlxTextInput extends FlxBaseTextInput
 			point = FlxPoint.get();
 		}
 
-		pointer.getScreenPosition(camera, point);
+		pointer.getViewPosition(camera, point);
 
 		final position = getScreenPosition(FlxPoint.weak(), camera);
 		point.subtractPoint(position);
